@@ -1,0 +1,442 @@
+body {
+	margin: 0 auto;
+	line-height: 1.7em;
+}
+
+.l-box {
+	padding: 1em;
+}
+
+.header {
+	margin: 0 0;
+}
+
+.header .pure-menu {
+	padding: 0.5em;
+}
+
+.header .pure-menu li a:hover {
+	background: none;
+	border: none;
+	color: #aaa;
+}
+
+body .primary-button {
+	background: #02a6eb;
+	color: #fff;
+}
+
+.splash {
+	margin: 2em auto 0;
+	padding: 3em 0.5em;
+	background: #eee;
+}
+.splash .splash-head {
+	font-size: 300%;
+	margin: 0em 0;
+	line-height: 1.2em;
+}
+.splash .splash-subhead {
+	color: #999;
+	font-weight: 300;
+	line-height: 1.4em;
+}
+.splash .primary-button {
+	font-size: 150%;
+}
+
+.content .content-subhead {
+	color: #999;
+	padding-bottom: 0.3em;
+	text-transform: uppercase;
+	margin: 0;
+	border-bottom: 2px solid #eee;
+	display: inline-block;
+}
+
+.content .content-ribbon {
+	margin: 3em;
+	border-bottom: 1px solid #eee;
+}
+
+/*
+ *
+ * Added by myself
+ */
+.footer {
+	background: #111;
+	color: #666;
+	text-align: center;
+	padding: 1em;
+	font-size: 80%;
+}
+
+body a {
+	color: #7AB5D3;
+}
+
+section, article, hgroup {
+	text-align: center;
+}
+.pure-button-success, .pure-button-error, .pure-button-warning, .pure-button-secondary {
+	color: white;
+	border-radius: 4px;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.pure-button-success {
+	background: rgb(76, 201, 71); /* this is a green */
+}
+
+.pure-button-error {
+	background: rgb(202, 60, 60); /* this is a maroon */
+}
+
+.pure-button-warning {
+	background: orange;
+}
+
+.pure-button-secondary {
+	background: rgb(95, 198, 218); /* this is a light blue */
+}
+
+.alert {
+  padding: 8px 35px 8px 14px;
+  margin-bottom: 20px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  background-color: #fcf8e3;
+  border: 1px solid #fbeed5;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  text-align: center;
+}
+
+.alert,
+.alert h4 {
+  color: #c09853;
+}
+
+.alert h4 {
+  margin: 0;
+}
+
+.alert .close {
+  position: relative;
+  top: -2px;
+  right: -21px;
+  line-height: 20px;
+}
+
+.alert-success {
+  color: #468847;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}
+
+.alert-success h4 {
+  color: #468847;
+}
+
+.alert-danger,
+.alert-error {
+  color: #b94a48;
+  background-color: #f2dede;
+  border-color: #eed3d7;
+}
+
+.alert-danger h4,
+.alert-error h4 {
+  color: #b94a48;
+}
+
+.alert-info {
+  color: #3a87ad;
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+}
+
+.alert-info h4 {
+  color: #3a87ad;
+}
+
+.alert-block {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.alert-block > p,
+.alert-block > ul {
+  margin-bottom: 0;
+}
+
+.alert-block p + p {
+  margin-top: 5px;
+}
+
+/* --------------------------
+ * Responsive Styles
+ * --------------------------
+*/
+
+@media (max-width: 870px) {
+
+    /* Navigation Push Styles */
+    #layout {
+        position: relative;
+        padding-left: 0;
+    }
+        #layout.active {
+            position: relative;
+            left: 150px;
+        }
+            #layout.active #menu {
+                left: 150px;
+                width: 150px;
+            }
+
+    #menu {
+        left: 0;
+    }
+
+    .pure-menu-link {
+        position: fixed;
+        left: 0;
+        display: block;
+    }
+
+    #layout.active .pure-menu-link {
+        left: 150px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .content {
+        width: 95%;
+        font-size: 90%;
+    }
+
+    .legal-links {
+        padding:1em 0;
+    }
+    .legal-license,
+    .legal-copyright,
+    .legal-links,
+    .legal-links li {
+        text-align: center;
+    }
+
+    /* normalize paddings on small screens*/
+    .l-hbox {
+        padding: 1.3em;
+    }
+}
+
+p {
+    line-height: 1.6em;
+}
+
+.hero {
+    text-align: center;
+    margin: 8em 0 3em;
+}
+    .hero h1 {
+        font-size: 800%;
+        margin: 0;
+        padding: 0;
+        color: #1f8dd6;
+        font-weight: 100;
+    }
+    .hero h2 {
+        font-weight: 100;
+        font-size: 260%;
+        margin: 0.02em 0 0.8em;
+        color: #666;
+    }
+
+.hero-cta pre {
+    padding: 1em;
+    font-size: 100%;
+}
+
+a.pure-button-cta,
+a.pure-button-secondary {
+    font-size: 120%;
+    font-weight: bold;
+    margin: 0.25em 0;
+}
+
+a.pure-button-cta {
+    background: #1f8dd6;
+    color: white;
+    border: 1px solid #1f8dd6;
+}
+
+a.pure-button-secondary {
+    background: #fff;
+    color: #666;
+    border: 1px solid #ddd;
+}
+
+.size-chart {
+    width: 100%;
+}
+
+    .size-chart-item {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .size-chart-base {
+        background: #0e90d2;
+    }
+        .size-chart-base span {
+            color: rgb(103, 194, 240);
+        }
+
+    .size-chart-grids {
+        background: rgb(128, 88, 165);
+    }
+        .size-chart-grids span {
+            color: rgb(200, 131, 255);
+        }
+    .size-chart-forms {
+        background: #5eb95e;
+    }
+
+        .size-chart-forms span {
+            color: rgb(161, 240, 137);
+        }
+
+    .size-chart-buttons {
+        background: #dd514c;
+    }
+
+        .size-chart-buttons span {
+            color: rgb(236, 164, 154);
+        }
+
+    .size-chart-menus {
+        background: rgb(250, 210, 50);
+    }
+        .size-chart-menus span {
+            color: rgb(255, 240, 134);
+        }
+    .size-chart-tables {
+        background: rgb(243, 123, 29);
+    }
+        .size-chart-tables span {
+            color: rgb(255, 190, 129);
+        }
+
+    a.size-chart-label {
+        display: block;
+        color: #fff;
+        padding: 0.5em;
+        text-decoration: none;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .size-chart-size {
+        display: block;
+    }
+
+.marketing-ribbon {
+    border-bottom: 1px solid #eee;
+    padding: 1em 0;
+}
+
+    .marketing-ribbon h3 {
+        font-size: 1.47em;
+        font-weight: normal;
+    }
+
+.sample-buttons .pure-button {
+    width: 30%;
+    margin: 0.2em;
+}
+.sample-buttons p {
+    margin: 0.5em;
+}
+
+
+.pure-button-a {
+    background: #e1f2fa;
+    color: #5992aa;
+}
+
+.pure-button-b {
+    background: #fcebbd;
+    color: #af9540;
+}
+
+.pure-button-c,
+.pure-button-d,
+.pure-button-e {
+    border-radius: 8px;
+}
+
+.pure-button-f,
+.pure-button-g,
+.pure-button-h {
+    border-radius: 20px;
+}
+
+.pure-button-c {
+    background: #333;
+    color: #fff;
+}
+.pure-button-d {
+    background: #d3eda3;
+    color: #72962e;
+}
+
+.pure-button-e {
+    background: #f5ab9e;
+    color: #8c3a2b;
+}
+.pure-button-f {
+    background: #ddaeff;
+    color: #8156a7;
+}
+
+.pure-button-g {
+    background: #f57b00;
+    color: #ffca95;
+}
+
+.pure-button-h {
+    background: #008ed4;
+    color: #fff;
+}
+
+
+@media (max-width: 767px) {
+    .hero {
+        margin: 2em 0 1.5em;
+        padding: 0.6em;
+    }
+        .hero h1 {
+            font-size: 250%;
+            font-weight: 300; /* slightly thicker to compensate for font-size */
+        }
+        .hero h2 {
+            font-size: 165%;
+        }
+
+    /* by default l-hbox becomes padding: 1.3em; at <= 767px. However, this makes the heading
+    too far away from the content, so adding this in here. */
+    h3.l-hbox,
+    p.l-hbox {
+        padding: 0 1.3em;
+    }
+
+    a.size-chart-label {
+        font-size: 0.75em;
+        padding: 0.6667em;
+    }
+}

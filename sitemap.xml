@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+
+         xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>http://pumpndump.in/</loc>
+  </url>
+  <url>
+    <loc>http://pumpndump.in/result_app/</loc>
+  </url>
+  <url>
+    <loc>http://pumpndump.in/feedback.php</loc>
+  </url>
+  <url>
+    <loc>http://pumpndump.in/contact.php</loc>
+  </url>
+  <url>
+    <loc>http://games.pumpndump.in</loc>
+  </url>
+  <url>
+    <loc>http://pumpndump.in/result_app/welcome</loc>
+  </url>
+  <url>
+    <loc>http://pumpndump.in/result_app/welcome/about</loc>
+  </url>
+  <url>
+    <loc>http://pumpndump.in/result_app/welcome/contact</loc>
+  </url>
+  <url>
+    <loc>http://pumpndump.in/result_app/welcome/timeline</loc>
+  </url>
+  <url>
+    <loc>http://pumpndump.in/result_app/results</loc>
+  </url>
+  <url>
+    <loc>http://pumpndump.in/blog</loc>
+  </url>
+  <url>
+    <loc>http://pumpndump.in/greg</loc>
+  </url>
+  <url>
+    <loc>http://pumpndump.in/drupal</loc>
+  </url>
+  <url>
+    <loc>http://pumpndump.in/gallery</loc>
+  </url>
+  <url>
+    <loc>http://pumpndump.in/videos</loc>
+  </url>
+
+</urlset>
