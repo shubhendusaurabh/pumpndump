@@ -17,3 +17,4 @@
 	<script src="<?php echo base_url().'js/DT_bootstrap.js' ?>"></script>
 	<script src="<?php echo base_url('js/chardinjs.min.js') ?>"></script>
 	<script src="<?php echo base_url('js/tour.js') ?>"></script>
+	

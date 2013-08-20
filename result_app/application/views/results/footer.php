@@ -1,3 +1,6 @@
+<div class="container">
+	<?php $this->load->view('results/comments', $this->data); ?>
+</div>
 <hr>
 
       <footer>

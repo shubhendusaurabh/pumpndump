@@ -1,6 +1,10 @@
 <?php
 	class Results extends CI_Controller {
+		
+		public $data = array();
+		
 		function __construct(){
+			
 			parent::__construct();
 			$this->load->helper('html');
 			$this->load->model('result_model');
@@ -23,10 +27,35 @@
 				$this->load->model('analytic_m');
 				$this->analytic_m->save($data['student']);
 				
+				$this->load->library('form_validation');
+				$batch = $this->session->userdata('yearjoin');
+				
+				$this->load->model('comment_m');
+				$this->data['comments'] = $this->comment_m->get_by('batch', $batch);
+				//var_dump($this->data['comments']);
+				$this->data['new_comment'] = $this->comment_m->get_new();
+				
+				$this->load->model('captcha_m');
+				$this->data['cap'] = $this->captcha_m->get_captcha();
+				
+				if($this->input->post('submit')){
+					$this->load->library('form_validation');
+					$rules = $this->comment_m->rules;
+		
+					$this->form_validation->set_rules($rules);
+					if ($this->form_validation->run() == TRUE) {
+						$data = $this->comment_m->array_from_post(array('name', 'email', 'comment'));
+						
+						$data['batch'] = $batch;
+						var_dump($this->session->userdata());	
+						$this->comment_m->save($data);
+						redirect('results/index/');
+					}
+				}
 				
 				$this->load->view('results/header',$data);
 				$this->load->view('results/welcome', $data);
-				$this->load->view('results/footer');
+				$this->load->view('results/footer', $this->data);
 			}
 		}
 		public function rollno_check($input_roll){
@@ -58,18 +87,73 @@
 			$data['marks'] = $this->result_model->get_table($sem);
 			$this->table->set_heading($subjects);
 			$data['noofsems'] = $this->result_model->no_of_sem();
+			
+			$this->load->library('form_validation');
+			$batch = $this->session->userdata('yearjoin');
+			
+			$this->load->model('comment_m');
+			$this->data['comments'] = $this->comment_m->get_by('batch', $batch);
+			//var_dump($this->data['comments']);
+			$this->data['new_comment'] = $this->comment_m->get_new();
+			
+			$this->load->model('captcha_m');
+			$this->data['cap'] = $this->captcha_m->get_captcha();
+			
+			if($this->input->post('submit')){
+				$this->load->library('form_validation');
+				$rules = $this->comment_m->rules;
+	
+				$this->form_validation->set_rules($rules);
+				if ($this->form_validation->run() == TRUE) {
+					$data = $this->comment_m->array_from_post(array('name', 'email', 'comment'));
+					
+					$data['batch'] = $batch;
+					var_dump($this->session->userdata());	
+					$this->comment_m->save($data);
+					redirect('results/table/'. $sem);
+				}
+			}
+			
+			
 			$this->load->view('results/header',$data);
 			$this->load->view('results/table', $data);
-			$this->load->view('results/footer');
+			$this->load->view('results/footer', $this->data);
 		}
 		public function charts(){
 			if (!isset($this->session->userdata['id'])){
 				redirect('/results/', 'refresh');
 			}
 			$data['noofsems'] = $this->result_model->no_of_sem();
+			
+			$this->load->library('form_validation');
+			$batch = $this->session->userdata('yearjoin');
+			
+			$this->load->model('comment_m');
+			$this->data['comments'] = $this->comment_m->get_by('batch', $batch);
+			//var_dump($this->data['comments']);
+			$this->data['new_comment'] = $this->comment_m->get_new();
+			
+			$this->load->model('captcha_m');
+			$this->data['cap'] = $this->captcha_m->get_captcha();
+			
+			if($this->input->post('submit')){
+				$this->load->library('form_validation');
+				$rules = $this->comment_m->rules;
+	
+				$this->form_validation->set_rules($rules);
+				if ($this->form_validation->run() == TRUE) {
+					$data = $this->comment_m->array_from_post(array('name', 'email', 'comment'));
+					
+					$data['batch'] = $batch;
+					var_dump($this->session->userdata());	
+					$this->comment_m->save($data);
+					redirect('results/charts/');
+				}
+			}
+			
 			$this->load->view('results/header',$data);
 			$this->load->view('results/charts');
-			$this->load->view('results/footer');
+			$this->load->view('results/footer', $this->data);
 			
 		}
 		public function ajaxCall($sem = 0){
@@ -86,6 +170,19 @@
 		}
 		public function temp(){
 			$this->load->view('body');
+		}
+		
+		public function check_captcha(){
+		
+			if ( ! $this->captcha_m->validate_captcha($this->input->post('captcha')))
+			{
+				$this->form_validation->set_message('check_captcha', "You must submit the word that appears in the image");
+				return FALSE;
+			}
+			else
+			{
+				return TRUE;
+			}
 		}
 		
 	}

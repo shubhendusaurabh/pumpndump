@@ -31,8 +31,16 @@ require_once 'partials/header.php';
 						</article>
 					</section>
 				</div>
-	<br />
-	<br />
-	<br />
+				<div class="pure-g-r">
+					<section class="pure-u-1">
+						<h2 class="splash-subhead">
+							Data Visualisation
+						</h2>
+						<article class="content">
+							<p>Some simple data visualizations of data from http://data.gov.in</p>
+							<a class="pure-button pure-button-primary" href="http://pumpndump.in/data">Check Out</a>
+						</article>
+					</section>
+				</div>
 			</div>
 <?php include_once 'partials/footer.php' ?>

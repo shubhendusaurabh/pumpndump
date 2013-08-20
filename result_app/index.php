@@ -1,5 +1,10 @@
 <?php
-
+date_default_timezone_set('Asia/Kolkata');
+	
+	if (is_dir(dirname(__FILE__)))
+	{
+		define('DIRPATH', dirname(__FILE__).DIRECTORY_SEPARATOR);
+	}
 /*
  *---------------------------------------------------------------
  * APPLICATION ENVIRONMENT

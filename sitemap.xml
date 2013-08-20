@@ -49,5 +49,7 @@
   <url>
     <loc>http://pumpndump.in/videos</loc>
   </url>
-
+  <url>
+    <loc>http://pumpndump.in/data/</loc>
+  </url>
 </urlset>
