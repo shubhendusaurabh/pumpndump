@@ -8,7 +8,8 @@
 			'student'	=> 'Student',
 			'subject'	=> 'Subject',
 			'timeline'	=> 'Timeline',
-			'user'		=> 'User'
+			'user'		=> 'User',
+			'comment'	=> 'Comment'
 		);
 		
 		$str = '';

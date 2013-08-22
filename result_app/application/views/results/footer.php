@@ -1,5 +1,10 @@
 <div class="container">
-	<?php $this->load->view('results/comments', $this->data); ?>
+	<div class="row">
+		<div class="span8 offset3">
+			<?php $this->load->view('results/comments', $this->data); ?>
+		</div>
+	</div>
+	
 </div>
 <hr>
 
