@@ -41,15 +41,9 @@
     <loc>http://pumpndump.in/greg</loc>
   </url>
   <url>
-    <loc>http://pumpndump.in/drupal</loc>
-  </url>
-  <url>
-    <loc>http://pumpndump.in/gallery</loc>
-  </url>
-  <url>
-    <loc>http://pumpndump.in/videos</loc>
-  </url>
-  <url>
     <loc>http://pumpndump.in/data/</loc>
+  </url>
+  <url>
+	<loc>http://pumpndump.in/fmd/</loc>
   </url>
 </urlset>

@@ -42,5 +42,16 @@ require_once 'partials/header.php';
 						</article>
 					</section>
 				</div>
+				<div class="pure-g-r">
+					<section class="pure-u-1">
+						<h2 class="splash-subhead">
+							Folder Movie Data
+						</h2>
+						<article class="content">
+							<p>A simple web app to show ratings of movies in a folder using <a href="http://www.omdbapi.com/">OMDB API</a></p>
+							<a class="pure-button pure-button-primary" href="http://pumpndump.in/fmd/">Check Out</a>
+						</article>
+					</section>
+				</div>
 			</div>
 <?php include_once 'partials/footer.php' ?>
