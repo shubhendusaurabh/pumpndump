@@ -115,7 +115,19 @@ if (isset($_POST['url']) && !empty($_POST['url'])) {
 		  })();
 		</script>
 		<!-- End Piwik Code -->
-
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<iframe data-aa='13355' src='//ad.a-ads.com/13355?size=120x60' scrolling='no' style='width:120px; height:60px; border:0px; padding:0;overflow:hidden' allowtransparency='true'></iframe>
+				</div>
+				<div class="col-md-4">
+					<a href='https://coinbase.com/?r=52a1dc1bb626439fe30000c2&utm_campaign=user-referral&src=badge' alt='Create A Bitcoin Wallet On Coinbase'><img src='https://coinbase.com/assets/badges/badge1.png' width='128' height='128' /></a>					
+				</div>
+				<div class="col-md-4">
+					<a href='http://a-ads.com?partner=13355'>Advertise with Anonymous Ads</a>
+				</div>
+			</div>
+		</div>
 	</body>
 
 </html>
