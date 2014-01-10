@@ -11,7 +11,7 @@ require_once 'functions.php';
 				<div class="pure-g-r">
 					<div class="pure-u-1-2">
 						<div class="l-box splash-image">
-							<img src="http://lorempixel.com/640/480/nature" alt="Random Image" width="640px" alt="480px">
+							<img src="css/Koala-optimized.jpg" alt="Koala" width="640px" alt="480px">
 						</div>
 					</div>
 
