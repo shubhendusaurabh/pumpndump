@@ -4,10 +4,12 @@
 
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="description" content="LiteCoin Mining Rig India Setup">
+		<meta name="description" content="LiteCoin Mining Rig India hardware comparison and reviews">
+		<meta name="keywords" content="litecoin mining india, litecoin india, mining india">
+		<link rel=”author” href=”https://plus.google.com/100866266072229565458“/>
 
 
-		<title>Crypto Currencies Mining in India</title>
+		<title>LiteCoin Mining in India</title>
 		<!-- stylesheets go here -->
 		<link rel="stylesheet" href="../css/united.css">
 		<style>
@@ -122,10 +124,11 @@ body {
         border-leftt-width: 1px;
         border-left-color: gray;
         border-left-style: solid;
+		width: 375px;
         */
         display: inline-block;
         padding-left: 3px;
-        width: 375px;
+        
         height: 250px;
     }
     .category-item:hover {
@@ -146,6 +149,10 @@ body {
         text-align: center;
         width: 200px;
     }
+	
+	.put-right {
+		float: right;
+	}
 		</style>
 	</head>
 	<body>

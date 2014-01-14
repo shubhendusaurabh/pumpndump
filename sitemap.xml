@@ -46,4 +46,40 @@
   <url>
 	<loc>http://pumpndump.in/fmd/</loc>
   </url>
+  <url>
+  	<loc>http://pumpndump.in/litecoin/</loc>
+  </url>
+  <url>
+    <loc>http://pumpndump.in/calendar/</loc>
+  </url>
+  <url>
+    <loc>http://pumpndump.in/classifieds</loc>
+  </url>
+  <url>
+    <loc>http://pumpndump.in/crm/</loc>
+  </url>
+  <url>
+    <loc>http://pumpndump.in/forum/</loc>
+  </url>
+  <url>
+    <loc>http://pumpndump.in/gallery</loc>
+  </url>
+  <url>
+    <loc>http://pumpndump.in/guestbook</loc>
+  </url>
+  <url>
+    <loc>http://pumpndump.in/microblog/</loc>
+  </url>
+  <url>
+    <loc>http://pumpndump.in/shop/</loc>
+  </url>
+  <url>
+    <loc>http://pumpndump.in/support</loc>
+  </url>
+  <url>
+    <loc>http://pumpndump.in/social</loc>
+  </url>
+  <url>
+    <loc>http://pumpndump.in/survey</loc>
+  </url>
 </urlset>
