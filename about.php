@@ -11,10 +11,7 @@ require_once 'partials/header.php';
 	<article>
 		<h2 class="splash-subhead">About Me</h2>
 		<p>
-			Hi, I am Shubhendu currently an undergraduate student in Computer Science.
-		</p>
-		<p>
-			I am interested in Web in particular and Technology in general.
+		  Hello World!
 		</p>
 		<p>
 			I use this website to showcase my projects.

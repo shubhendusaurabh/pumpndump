@@ -43,7 +43,7 @@
 						</span>
 						<br>
 						<span itemprop="price" class="lead">
-							Rs. 19504/-
+							&#8377; 19504/-
 						</span>
 						<br>
 						<a itemprop="url" class="btn btn-primary" href="http://www.flipkart.com/msi-amd-r9-270x-hawk-2-gb-gddr5-graphics-card/p/itmdpvgkcm6mzhuz?pid=GRCDPVGB4KZUZGFN&icmpid=reco_pp_hSame_graphics_card_1">View</a>
@@ -67,7 +67,7 @@
 						</span>
 						<br>
 						<span itemprop="price" class="lead">
-							Rs. 25499/-
+							&#x20B9; 25499/-
 						</span>
 
 						<br>

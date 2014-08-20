@@ -53,5 +53,14 @@ require_once 'partials/header.php';
 						</article>
 					</section>
 				</div>
+        <div class="pure-g-r">
+            <section class="pure-u-1">
+                <h2 class="splash-subhead">Bing Rewards Bot</h2>
+                <article class="content">
+                    <p>A search bot that generates Free Microsoft Points using Bing Rewards.</p>
+                    <a class="pure-button pure-button-primary" href="http://pumpndump.in/bing-rewards-bot/">Bing Rewards Bot</a>
+                </article>
+            </section>
+        </div>
 			</div>
 <?php include_once 'partials/footer.php' ?>
